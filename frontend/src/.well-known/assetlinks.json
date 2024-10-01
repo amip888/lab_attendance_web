@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.lab_attendance.operator",
+            "sha256_cert_fingerprints": [
+                "D7:A4:33:92:15:F8:74:9E:5C:F3:EA:C5:B8:33:71:63:27:15:3B:4B:28:8B:EF:00:86:CE:95:89:BF:6A:54:4D"
+            ]
+        }
+    }
+]

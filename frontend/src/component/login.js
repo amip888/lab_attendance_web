@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,48 +11,48 @@ const Login = () => {
     const Auth = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/login',{
+            await axios.post('http://localhost:5000/login', {
                 email: email,
                 password: password
             });
             navigate("/dashboard");
         } catch (error) {
-            if(error.response){
+            if (error.response) {
                 setMessage(error.response.data.message);
             }
         }
     }
-  return (
-    <section className="hero has-background-grey-light is-fullheight is-fullwidth">
-      <div className="hero-body">
-        <div className="container">
-            <div className="columns is-centered">
-                <div className="column is-4-desktop">
-                    <form className='box' onSubmit={Auth}>
-                        <p className='has-text-centered'>{message}</p>
-                        <div className="field mt-5">
-                            <label className="label">Email or Username</label>
-                            <div className="controls">
-                                <input type="text" className="input" placeholder='Username' value={email} onChange={(e) => setEmail(e.target.value)}/>
-                            </div>
+    return (
+        <section className="hero has-background-grey-light is-fullheight is-fullwidth">
+            <div className="hero-body">
+                <div className="container">
+                    <div className="columns is-centered">
+                        <div className="column is-4-desktop">
+                            <form className='box' onSubmit={Auth}>
+                                <p className='has-text-centered'>{message}</p>
+                                <div className="field mt-5">
+                                    <label className="label">Email or Username</label>
+                                    <div className="controls">
+                                        <input type="text" className="input" placeholder='Username' value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    </div>
+                                </div>
+                                <div className="field mt-5">
+                                    <label className="label">Password</label>
+                                    <div className="controls">
+                                        <input type="password" className="input" placeholder='*********' value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    </div>
+                                </div>
+                                <div className="field mt-5">
+                                    <button className="button is-success is-fullwidth">Login</button>
+                                </div>
+                            </form>
                         </div>
-                        <div className="field mt-5">
-                            <label className="label">Password</label>
-                            <div className="controls">
-                                <input type="password" className="input" placeholder='*********' value={password} onChange={(e) => setPassword(e.target.value)}/>
-                            </div>
-                        </div>
-                        <div className="field mt-5">
-                            <button className="button is-success is-fullwidth">Login</button>
-                        </div>
-                    </form>
+                    </div>
+
                 </div>
             </div>
-          
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Login

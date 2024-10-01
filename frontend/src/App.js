@@ -3,12 +3,14 @@ import Login from "./component/login";
 import Register from "./component/register";
 import Navbar from "./component/navbar";
 import Dashboard from "./component/dashboard";
+import Applink from "./component/link";
 
 function App() {
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<Login/>}/>
+        <Route path="/applink" element={<Applink/>}/>
         <Route path="/register" element={<Register/>}/>   
         <Route path="/dashboard" element={
           [
