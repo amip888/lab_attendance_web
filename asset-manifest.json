@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lab_attendance_web/static/css/main.53bcab0a.css",
+    "main.js": "/lab_attendance_web/static/js/main.dc47deb0.js",
+    "index.html": "/lab_attendance_web/index.html",
+    "main.53bcab0a.css.map": "/lab_attendance_web/static/css/main.53bcab0a.css.map",
+    "main.dc47deb0.js.map": "/lab_attendance_web/static/js/main.dc47deb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53bcab0a.css",
+    "static/js/main.dc47deb0.js"
+  ]
+}
