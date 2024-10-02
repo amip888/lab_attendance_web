@@ -4,8 +4,8 @@ import React from 'react';
 const LinkComponent = () => {
     return (
         <div>
-            <h3>Dynamic Link Component <a id="myLink" href="https://amip888.github.io/lab_attendance_web" target="_system" button="Click Here">Applink</a></h3>
-            <h3>To access applink please click <a id="myLink" href="https://amip888.github.io/lab_attendance_web" target="_system">here</a></h3>
+            <h3>Home Page <a id="myLink" href="https://amip888.github.io/lab_attendance_web" target="_system">click here</a></h3>
+            <h3>Detail Page <a id="myLink" href="https://amip888.github.io/lab_attendance_web/detail" target="_system">click here</a></h3>
         </div>
     );
 };
